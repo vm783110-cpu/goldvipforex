@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Forex VIP | Premium Trading Signals</title>
+    <title>Gold Forex VIP | Account Handling</title>
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -17,137 +17,204 @@
     fbq('init', '1695839855170356');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1695839855170356&ev=PageView&noscript=1"
-    /></noscript>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
-            color: #fff;
-            text-align: center;
+            background-color: #1a1a1a;
+            background-image: radial-gradient(circle at top, #2c2c2c 0%, #000000 100%);
+            color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100 vertical-height;
-            padding: 20px;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 500px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 20px;
-            border: 1px solid #d4af37;
-            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+            max-width: 450px;
+            padding: 40px 20px;
+            text-align: center;
         }
 
-        .logo {
-            width: 120px;
-            height: 120px;
-            margin-bottom: 20px;
+        .profile-circle {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            border: 2px solid #d4af37;
-            padding: 5px;
+            border: 3px solid #d4af37;
+            margin: 0 auto 15px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+            background: #000;
+        }
+
+        .profile-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
-            color: #d4af37;
-            font-size: 28px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 26px;
+            margin: 10px 0 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
 
-        p {
-            font-size: 16px;
-            color: #cccccc;
-            line-height: 1.6;
-        }
-
-        .features {
-            text-align: left;
-            margin: 25px 0;
-            list-style: none;
-            padding: 0;
-        }
-
-        .features li {
-            margin-bottom: 10px;
+        .subscribers {
+            color: #aaaaaa;
             font-size: 15px;
+            margin-bottom: 25px;
         }
 
-        .features li::before {
-            content: '✔️';
-            margin-right: 10px;
-            color: #d4af37;
+        .bonus-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
         }
 
-        .tg-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #0088cc, #00aaff);
+        .bonus-box h2 {
+            font-size: 18px;
+            margin: 0 0 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .bonus-box p {
+            font-size: 14px;
+            color: #cccccc;
+            margin: 0;
+        }
+
+        .btn-link {
+            display: block;
+            background: #3498db;
             color: white;
-            padding: 15px 35px;
-            border-radius: 50px;
             text-decoration: none;
+            padding: 18px;
+            border-radius: 40px;
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
-            transition: transform 0.3s ease;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+            transition: transform 0.2s;
+        }
+
+        .btn-link:active {
+            transform: scale(0.98);
+        }
+
+        .redirect-status {
+            border: 1px dashed #2ecc71;
+            color: #2ecc71;
+            padding: 12px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background: rgba(46, 204, 113, 0.1);
+            text-transform: uppercase;
+        }
+
+        .timer-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-top: 20px;
         }
 
-        .tg-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 136, 204, 0.6);
+        .timer-box {
+            background: #222;
+            padding: 15px;
+            border-radius: 12px;
+            min-width: 75px;
+            border-bottom: 4px solid #e74c3c;
         }
 
-        .live-badge {
-            background: #ff0000;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 5px;
+        .timer-val {
+            font-size: 24px;
+            font-weight: 800;
+            display: block;
+        }
+
+        .timer-label {
+            font-size: 10px;
+            color: #777;
+            text-transform: uppercase;
+        }
+
+        .footer-text {
+            margin-top: 40px;
             font-size: 12px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: inline-block;
-            animation: blink 1.5s infinite;
-        }
-
-        @keyframes blink {
-            50% { opacity: 0.5; }
+            color: #555;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="logo.png" alt="Gold Forex VIP" class="logo">
-        
-        <div class="live-badge">LIVE TRADING SIGNALS</div>
-        
-        <h1>Gold Forex VIP</h1>
-        <p>Join the world's most accurate Forex community. Get daily high-probability signals and professional analysis.</p>
+        <div class="profile-circle">
+            <img src="logo.png" alt="Gold Forex VIP">
+        </div>
 
-        <ul class="features">
-            <li>90%+ Accuracy Signals</li>
-            <li>Daily Gold & Major Pairs Analysis</li>
-            <li>Risk Management Strategies</li>
-            <li>24/7 Professional Support</li>
-        </ul>
+        <h1>Gold Forex VIP 👑</h1>
+        <div class="subscribers">22,540 subscribers</div>
 
-        <a href="https://t.me/+jE7sEbzR23gwM2U1" class="tg-button" onclick="fbq('track', 'Contact');">
-            JOIN FREE TELEGRAM 🚀
+        <div class="bonus-box">
+            <h2>🎁 Get 100% Profit Bonus!</h2>
+            <p>Gold Forex VIP - Professional Account Handling & Daily Profits Welcome!</p>
+        </div>
+
+        <a href="https://t.me/+jE7sEbzR23gwM2U1" class="btn-link" onclick="fbq('track', 'Lead');">
+            JOIN TELEGRAM FREE
         </a>
-        
-        <p style="font-size: 12px; margin-top: 30px; color: #666;">
-            *Trading involves risk. Join only if you are 18+.
-        </p>
+
+        <div class="redirect-status">
+            👇 AUTO REDIRECTING IN <span id="sec-text">10</span> SECONDS ✅
+        </div>
+
+        <a href="https://t.me/+jE7sEbzR23gwM2U1" class="btn-link" onclick="fbq('track', 'Lead');">
+            JOIN TELEGRAM FREE
+        </a>
+
+        <div class="timer-container">
+            <div class="timer-box">
+                <span class="timer-val">00</span>
+                <span class="timer-label">Minutes</span>
+            </div>
+            <div class="timer-box">
+                <span class="timer-val" id="timer-sec">10</span>
+                <span class="timer-label">Seconds</span>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            Official Page of Gold Forex VIP Management
+        </div>
     </div>
+
+    <script>
+        let count = 10;
+        const timerText = document.getElementById('timer-sec');
+        const secText = document.getElementById('sec-text');
+
+        const countdown = setInterval(() => {
+            count--;
+            if (count >= 0) {
+                timerText.innerText = count < 10 ? "0" + count : count;
+                secText.innerText = count;
+            }
+            if (count === 0) {
+                clearInterval(countdown);
+                window.location.href = "https://t.me/+jE7sEbzR23gwM2U1";
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
